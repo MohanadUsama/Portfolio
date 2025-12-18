@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mohanad Ahmed Usama</title>
+    <meta name="description" content="Resume and CV of Mohanad Ahmed Usama">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="bracket">&lt;</span>
+            <span class="logo-text">MU</span>
+            <span class="bracket">/&gt;</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="cv.html" class="nav-link active">CV</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-icon"></div>
+        </div>
+    </nav>
+
+    <!-- Page Transition - Terminal Loading -->
+    <div class="page-transition">
+        <div class="terminal-content">
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> cd <span
+                    id="page-destination"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> loading<span
+                    class="terminal-cursor"></span></div>
+        </div>
+    </div>
+
+    <!-- CV Page -->
+    <section id="cv" class="page active">
+        <div class="container">
+            <h2 class="page-title">
+                <span class="title-bracket">&lt;</span>
+                <span class="title-text">Resume</span>
+                <span class="title-bracket">/&gt;</span>
+            </h2>
+
+            <!-- Education -->
+            <div class="cv-section">
+                <h3 class="section-title">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026 (Expected)</span>
+                            <h4>Bachelor of Computer Science</h4>
+                            <p class="institution">Menoufia University – Faculty of Science, Mathematics & Computer
+                                Science</p>
+                            <p class="gpa">GPA: 3.67</p>
+                            <div class="coursework">
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Operating Systems</span>
+                                <span class="tag">Software Engineering</span>
+                                <span class="tag">Computer Networks</span>
+                                <span class="tag">Artificial Intelligence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="cv-section">
+                <h3 class="section-title">Professional Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Research Member</h4>
+                            <p class="institution">Applied Research Initiative</p>
+                            <p class="experience-desc">Contributed to applied research initiatives in computational
+                                mathematics, collaborating on interdisciplinary projects that bridge theoretical
+                                concepts with practical applications in computer science and mathematical modeling.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Active Member</h4>
+                            <p class="institution">Entrepreneurship Initiative</p>
+                            <p class="experience-desc">Active participant in entrepreneurship initiatives, developing
+                                business acumen and innovation skills while collaborating on startup projects and
+                                networking with industry professionals and fellow entrepreneurs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Member</h4>
+                            <p class="institution">Computational Research & Development</p>
+                            <p class="experience-desc">Contributing to computational research and development projects,
+                                focusing on advanced computing techniques and collaborative problem-solving in computer
+                                science applications and algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="cv-section">
+                <h3 class="section-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-progress="85">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar" data-progress="80">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Security & Testing</h4>
+                        <div class="skill-list">
+                            <span class="skill-badge">Network Security</span>
+                            <span class="skill-badge">Vulnerability Assessment</span>
+                            <span class="skill-badge">Wireshark</span>
+                            <span class="skill-badge">Burp Suite</span>
+                            <span class="skill-badge">Nmap</span>
+                            <span class="skill-badge">Metasploit</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Development Tools</h4>
+                        <div class="skill-list">
+                            <span class="skill-badge">Git & GitHub</span>
+                            <span class="skill-badge">Visual Studio</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">SQL & SQLite</span>
+                            <span class="skill-badge">Linux (Ubuntu, Kali)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="cv-section">
+                <h3 class="section-title">Certifications</h3>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🎓</div>
+                        <h4>AWS Academy Cloud Foundations</h4>
+                        <p class="cert-issuer">AWS Academy Graduate</p>
+                        <p class="cert-date">Issued: April 2025</p>
+                        <p class="cert-desc">Foundational knowledge of AWS cloud concepts, services, security, and
+                            architecture.</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🔒</div>
+                        <h4>Penetration Testing & Ethical Hacking</h4>
+                        <p class="cert-issuer">NTI</p>
+                        <p class="cert-date">Issued: December 2025</p>
+                        <p class="cert-desc">Principles and techniques of ethical hacking and vulnerability assessment.
+                        </p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🐍</div>
+                        <h4>Introduction to Python</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-date">Completed</p>
+                        <p class="cert-desc">Foundational knowledge in Python programming including data types, control
+                            structures, and functions.</p>
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/2e1f6d686d8d84578563b09948b4ad6c0af0706d"
+                            target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🐍</div>
+                        <h4>Intermediate Python</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-date">Completed</p>
+                        <p class="cert-desc">Advanced Python skills including data structures, OOP, and error handling
+                            for automation and analysis.</p>
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/2e1f6d686d8d84578563b09948b4ad6c0af0706d"
+                            target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">📊</div>
+                        <h4>Understanding Data Science</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-date">Completed</p>
+                        <p class="cert-desc">Comprehensive knowledge of data science fundamentals including analysis,
+                            statistics, and machine learning.</p>
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/bb2df860abf4cdf68a19b21f37b0b624ebab7a6a"
+                            target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="cv-section">
+                <h3 class="section-title">Languages</h3>
+                <div class="languages">
+                    <div class="language-item">
+                        <span class="language-name">Arabic</span>
+                        <span class="language-level">Native Speaker</span>
+                        <div class="language-bar">
+                            <div class="language-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <span class="language-level">C1 Advanced</span>
+                        <div class="language-bar">
+                            <div class="language-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

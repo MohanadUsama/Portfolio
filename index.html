@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohanad Ahmed Usama - Front-End Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Mohanad Ahmed Usama - Front-End Developer specializing in creative web experiences">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="bracket">&lt;</span>
+            <span class="logo-text">MU</span>
+            <span class="bracket">/&gt;</span>
+        </div>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-icon"></div>
+        </div>
+    </nav>
+
+    <!-- Page Transition - Terminal Loading -->
+    <div class="page-transition">
+        <div class="terminal-content">
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> cd <span
+                    id="page-destination"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> loading<span
+                    class="terminal-cursor"></span></div>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hello">Hello, I'm</span>
+                    <span class="name" id="typedName">Mohanad Ahmed Usama</span>
+                </h1>
+                <p class="hero-subtitle" id="typedRole"></p>
+                <p class="hero-description">
+                    Computer Science student passionate about creating innovative web experiences
+                    with cutting-edge technologies and creative design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">developer.js</span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Mohanad Ahmed"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Front-End Developer"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Menofia, Egypt"</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"Python"</span>, 
+    <span class="code-string">"C#"</span>, 
+    <span class="code-string">"Security Testing"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Building Creative UIs"</span>,
+  <span class="code-function">code</span>: <span class="code-keyword">function</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Clean & Innovative"</span>;
+  }
+};</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- What I Do Section -->
+        <div class="what-i-do-section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="bracket">&lt;</span>
+                    What I Do
+                    <span class="bracket">/&gt;</span>
+                </h2>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Penetration Testing</h3>
+                        <p>Comprehensive security assessments using industry-standard tools like Wireshark, Burp Suite,
+                            Nmap, and Metasploit for vulnerability detection.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Software Development</h3>
+                        <p>Full-stack development using Python and C# with expertise in object-oriented programming,
+                            debugging, and testing methodologies.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🗄️</div>
+                        <h3>Database Management</h3>
+                        <p>Design and implementation of robust database solutions using SQL and SQLite with focus on
+                            data integrity and performance optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Process Section -->
+        <div class="work-process-section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="bracket">&lt;</span>
+                    Work Process
+                    <span class="bracket">/&gt;</span>
+                </h2>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Research</h3>
+                            <p>Understanding requirements and analyzing the problem domain to create effective
+                                solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Concept</h3>
+                            <p>Developing innovative concepts and architectural designs for robust software solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>Creating clean, maintainable code with focus on security and performance optimization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Testing</h3>
+                            <p>Comprehensive testing including security assessments and penetration testing
+                                methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

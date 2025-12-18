@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mohanad Ahmed Usama</title>
+    <meta name="description" content="Portfolio projects by Mohanad Ahmed Usama">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="bracket">&lt;</span>
+            <span class="logo-text">MU</span>
+            <span class="bracket">/&gt;</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-icon"></div>
+        </div>
+    </nav>
+
+    <!-- Page Transition - Terminal Loading -->
+    <div class="page-transition">
+        <div class="terminal-content">
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> cd <span
+                    id="page-destination"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">user@portfolio:~$</span> loading<span
+                    class="terminal-cursor"></span></div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <section id="projects" class="page active">
+        <div class="container">
+            <h2 class="page-title">
+                <span class="title-bracket">&lt;</span>
+                <span class="title-text">Projects</span>
+                <span class="title-bracket">/&gt;</span>
+            </h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/library.png') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Library Management System</h3>
+                        <p>Desktop application for managing student records and budget allocations with robust CRUD
+                            operations and secure login functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">WinForms</span>
+                        </div>
+                        <ul class="project-features">
+                            <li>Intuitive user interface design</li>
+                            <li>Advanced search and filter (30% faster retrieval)</li>
+                            <li>Secure authentication system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/Personal Budget Tracker.png') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Budget Tracker</h3>
+                        <p>Financial management application for tracking income, expenses, and budget planning with
+                            comprehensive reporting features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Windows Forms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/portfolio.png') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cybersecurity Themed Portfolio</h3>
+                        <p>Modern web portfolio showcasing cybersecurity skills and projects with creative design and
+                            smooth animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/pen_test.jpeg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Security Assessment</h3>
+                        <p>Comprehensive penetration testing project demonstrating security assessment methodologies and
+                            vulnerability detection techniques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Penetration Testing</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Metasploit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/pen_test.jpeg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Analysis</h3>
+                        <p>Network traffic analysis and monitoring using Wireshark for security assessment and
+                            performance optimization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MohanadUsama" target="_blank" class="project-link">
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: url('Assests/pen_test.jpeg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Security Testing</h3>
+                        <p>Web application security testing project focused on XSS detection and web vulnerability
+                            assessment using Burp Suite.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Burp Suite</span>
+                            <span class="tech-tag">XSS</span>
+                            <span class="tech-tag">Web Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
